@@ -6,7 +6,7 @@ Official implementation of the AAMAS 2024 paper Measruing Policy Distance for MA
 
 To run this repository you need:
 
-i) Install the code's requirements. A virtual environment based on Conda is recommended. Install with 
+i) Install the code's requirements. A virtual environment based on Conda is recommended (We will update the docker approach soon). Install with 
 ```setup
 conda create --name madps --file requirements.txt
 ```
