@@ -150,21 +150,6 @@ class Scenario(BaseScenario):
         entity_pos = []
         for entity in world.landmarks:  # world.entities:
             entity_pos.append(entity.state.p_pos - agent.state.p_pos)
-        # entity colors
-        # entity_color = []
-        # for entity in world.landmarks:  # world.entities:
-        #     entity_color.append(entity.color)
-        # communication of all other agents
-        # comm = []
-        # other_pos = []
-        # for other in world.agents:
-        #     if other is agent:
-        #         continue
-        #     comm.append(other.state.c)
-        #     other_pos.append(other.state.p_pos - agent.state.p_pos)
-        # return np.concatenate(
-        #     [agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + comm
-        # )
         # Find the distance between the agent and the landmark of the same color
         # key = 0
         key = self.group_indices[world.agents.index(agent)]
@@ -178,23 +163,4 @@ class Scenario(BaseScenario):
             x = np.array(x)
         return x
     
-    # origin version
-    # def observation(self, agent, world):
-    #     # get positions of all entities in this agent's reference frame
-    #     entity_pos = []
-    #     key = self.group_indices[world.agents.index(agent)]
-
-    #     for i, entity in enumerate(world.landmarks):  # world.entities:
-    #         if i != key:
-    #             entity_pos.append(entity.state.p_pos - agent.state.p_pos)
-
-    #     customized_pos = world.landmarks[key].state.p_pos - agent.state.p_pos
-    #     customized_distance = np.array([np.sqrt(np.sum(np.square(customized_pos)))])
-    #     # x = np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + [customized_pos])
-    #     x = np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + [customized_pos] + entity_pos + [customized_distance])
-    #     if self.shuffle_obs:
-    #         x = list(x)
-    #         random.Random(self.group_indices[world.agents.index(agent)]).shuffle(x)
-    #         x = np.array(x)
-    #     return x
 

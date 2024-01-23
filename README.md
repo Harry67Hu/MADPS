@@ -58,34 +58,13 @@ model_NF.py includes:
 - `Policy`: Multi-agent policy models.
 - `ConditionalVAE`: Conditional VAE model.
 
-
-
-<!-- ### Hyperparameters 
-ac_NF.py: This is the main file for training and evaluating the agent. It contains the following functions:
-
-
-
-This repository is an implementation of SePS and not necessarily the identical code that generated the experiments (i.e. small bug-fixes, features, or improved hyperparameters _will_ be contained in this repository). Any major bug fixes (if necessary) will be documented below. 
-
-Right now, the proposed hyperparameters can be found in the config function of `ops_utils.py` (for the SePS procedure) and for `ac.py` (A2C hyperparameters).
-For SePS (`ops_utils.py`):
-- `pretraining_steps`: always returns stabler results when increased. Usually works with as low as 2,000, but should be increased to 10,000 if time/memory allows. Simpler environments (like BPS) can handle much smaller values.
-- `clusters`: the number of clusters (K in the paper). Please see respective section in the paper. When # of clusters is unknown Davies–Bouldin index is recommended (scikit-learn function [here](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html) works well). DB-Index will be used automatically if `clusters=None`.
-- `z_features`: Typical values of ~5-10 work well with the tested number of types. If this value is set to 2 then a visualisation will be saved at "clusters.png"
-- `kl_weight`: Values near zero work well since it tends to overwhelm the reconstruction loss. Try setting to zero when debugging.
-- `reconstruct`: Could be changed from `["next_obs", "rew"]` to only `["next_obs"]` or `["rew"]` if it known that the environment only changes the observation or reward function respectively (and not both).
-- `delay/delay_training/pretraining_times`: can be used in situation when differences between types are shown later in the training.
-
-In `ac.py`:
-- "algorithm_mode": Can be set to "ops", "iac", "snac-a", "snac-b". These values correspond to "SePS", "NoPS", "FuPS", "FuPS+id" respectively. -->
-
-
+Note: More details are coming soon.
 
 # Cite:
 
-The correct version is coming soon.
+Before the AAMAS 2024 conference, please cite the [arxiv version](https://arxiv.org/pdf/2401.11257.pdf).
 ```
-@inproceedings{tianyihu2024MAPD,
+@inproceedings{tianyihu-MAPD,
    title={Measruing Policy Distance for Multi-agent Reinforcement Learning},
    author={Tianyi Hu et.al},
    booktitle={International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
