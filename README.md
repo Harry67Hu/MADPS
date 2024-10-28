@@ -64,10 +64,11 @@ Note: More details are coming soon.
 
 Before the AAMAS 2024 conference, please cite the [arxiv version](https://arxiv.org/pdf/2401.11257.pdf).
 ```
-@inproceedings{tianyihu-MAPD,
-   title={Measruing Policy Distance for Multi-agent Reinforcement Learning},
-   author={Tianyi Hu et.al},
-   booktitle={International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
-   year={2024}
+@inproceedings{hu2024MAPD,
+  title={Measuring Policy Distance for Multi-Agent Reinforcement Learning},
+  author={Hu, Tianyi and Pu, Zhiqiang and Ai, Xiaolin and Qiu, Tenghai and Yi, Jianqiang},
+  booktitle={Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
+  pages={834--842},
+  year={2024}
 }
 ```
