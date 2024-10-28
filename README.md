@@ -62,7 +62,8 @@ Note: More details are coming soon.
 
 # Cite:
 
-Before the AAMAS 2024 conference, please cite the [arxiv version](https://arxiv.org/pdf/2401.11257.pdf).
+The paper can be quickly accessed via the [arxiv link](https://arxiv.org/pdf/2401.11257.pdf).
+After the AAMAS 2024 conference, please cite as follows: 
 ```
 @inproceedings{hu2024MAPD,
   title={Measuring Policy Distance for Multi-Agent Reinforcement Learning},
