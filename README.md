@@ -73,3 +73,4 @@ After the AAMAS 2024 conference, please cite as follows:
   year={2024}
 }
 ```
+Note: Since there is no appendix on the AAMAS official link, I put the appendix of the paper in this repository
