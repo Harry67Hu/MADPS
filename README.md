@@ -26,7 +26,6 @@ This command runs our multi-agent actor-critic training framework, with `petting
 
 
 
-
 ## Structure of MADPS
 The MADPS code is structured as follows:
 ### 1. Actor-Critic Training and Execution Framework (ac_NF.py)
@@ -58,7 +57,7 @@ model_NF.py includes:
 - `Policy`: Multi-agent policy models.
 - `ConditionalVAE`: Conditional VAE model.
 
-Note: More details are coming soon.
+
 
 # Cite:
 
@@ -73,4 +72,5 @@ After the AAMAS 2024 conference, please cite as follows:
   year={2024}
 }
 ```
-Note: Since there is no appendix on the AAMAS official link, I put the appendix of the paper in this repository
+**Note**: Since there is no appendix on the AAMAS official link, I put the appendix of the paper in this repository
+**Note**: Currently we are focusing on measuring more types of heterogeneity, not only just policy distance (policy heterogeneity). The new work is also developed based on this code foundation and will be launched in a few months. Stay tuned for our new work!
