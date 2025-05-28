@@ -72,5 +72,7 @@ After the AAMAS 2024 conference, please cite as follows:
   year={2024}
 }
 ```
-**Note**: Since there is no appendix on the AAMAS official link, I put the appendix of the paper in this repository
+
+**Note**: Since there is no appendix on the AAMAS official link, we put the appendix of the paper in this repository
+
 **Note**: Currently we are focusing on measuring more types of heterogeneity, not only just policy distance (policy heterogeneity). The new work is also developed based on this code foundation and will be launched in a few months. Stay tuned for our new work!
